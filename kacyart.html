@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="kacyart.css">
+  </head>
+  <body>
+    <h2 id="title" onmouseover="changeStyle()">JAVASCRIPT PRACTICE</h2>
+    <!-- LEFT SIDE -->
+    <!-- LEFT SIDE -->
+    <!-- LEFT SIDE -->
+    <!-- LEFT SIDE -->
+    <!-- LEFT SIDE -->
+    <div class="leftside">
+      <div class="fruit">
+        <button onclick="fruit()">Click me for Fruits!</button>
+      </div>
+      <div class="veggies">
+        <button onclick="veggies()">Click me for Veggies!</button>
+      </div>
+      <div class="age">
+        <form>
+          Your Age: <input id="input1" type="text" age="age" value=""><br>
+          <input class="agesubmit" type="button" onclick="ageCalculation()" value="Submit">
+        </form>
+      </div>
+      <div>
+        <p id="justText">Here is the old text</p>
+        <button type="button" onclick="changeText()">Click here to see new text</button>
+      </div>
+      <div>
+        <p>Click on the image to see it change!</p>
+        <img id="dogImage" class="dogImage" onclick="changeImage()" src="greta.jpg">
+      </div>
+    </div>
+    <!-- MIDDLE COLUMN -->
+    <!-- MIDDLE COLUMN -->
+    <!-- MIDDLE COLUMN -->
+    <!-- MIDDLE COLUMN -->
+    <!-- MIDDLE COLUMN -->
+    <div class="middle">
+      <div>
+        <p>Type your favorite number</p>
+        <input id="inputnum" type="number">
+        <button type="button" onclick="calculateNum()">Submit your Number</button>
+      </div>
+      <div>
+        <p>Enter a string and get a new one in it's place</p>
+        <input id="slcString">
+        <button onclick="sliceString()">Get new String</button>
+        <p id="sliceanswer"></p>
+      </div>
+      <div>
+        <p>Enter a sentence to split it up by commas</p>
+        <input id="sentence">
+        <button onclick="splitString()">Click for split string</button>
+        <p id="splitthestring"></p>
+      </div>
+      <div class="innerdiv">
+        <p>Type the sentence you would like to use</p>
+        <input id="sentenceforindex">
+        <p>Type in the word you want to find inside that sentence</p>
+        <input id="wordforindex">
+        <button onclick="indexToWord()">Find</button>
+      </div>
+    </div>
+    <!-- RIGHT SIDE -->
+    <!-- RIGHT SIDE -->
+    <!-- RIGHT SIDE -->
+    <!-- RIGHT SIDE -->
+    <!-- RIGHT SIDE -->
+    <!-- RIGHT SIDE -->
+    <div class="rightside">
+      <div>
+        <p>Please input a number between 1 and 10:</p>
+        <input id="numb" type="number">
+        <button type="button" onclick="myFunction()">Submit</button>
+      </div>
+      <div>
+        <p id="innerhtml" onmouseover="changeInnerHtml()">Here is my inner html</p>
+      </div>
+      <div>
+        <button type="button" onclick="writeDate()">Click here for the date</button>
+      </div>
+      <div>
+        <p>Input 2 numbers</p>
+        <input id="twonums1" type="number">
+        <input id="twonums2" type="number">
+        <button onclick="addInputs()">Submit to add</button>
+        <p id="output"></p>
+      </div>
+    </div>
+    <script src="kacyart.js"></script>
+  </body>
+</html>
