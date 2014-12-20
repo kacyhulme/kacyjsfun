@@ -1,5 +1,5 @@
 /* header */
-function changeStyle() {
+var changeStyle = function() {
   var t = document.getElementById("title");
   t.style.fontSize = "35px";
 }
@@ -9,7 +9,7 @@ function changeStyle() {
 /* left column */
 /* left column */
 /* left column */
-function fruit(){
+var fruit = function() {
   array = ["apples", "bananas", "oranges" , "kiwi", "strawberries"];
   length = array.length;
   for (i = 0; i < length; i++){
@@ -18,7 +18,7 @@ function fruit(){
   }
 };
 
-function veggies(){
+var veggies = function() {
   array = ["beets", "sweet potatoes", "squash" , "onion", "carrots"];
   length = array.length;
   for (i = 0; i < length; i++){
@@ -27,16 +27,16 @@ function veggies(){
   }
 };
 
-function ageCalculation(){
+var ageCalculation = function() {
   var userAge = document.getElementById('input1');
   alert("Thank you, your age is " + userAge.value);
 };
 
-function changeText(){
+var changeText = function() {
   document.getElementById("justText").innerHTML = "Here is the NEW text";
 };
 
-function changeImage(){
+var changeImage = function() {
   var image = document.getElementById('dogImage');
   if (image.src.match("greta")) {
     image.src = "detroit.jpg";
@@ -51,24 +51,24 @@ function changeImage(){
 /* middle column */
 /* middle column */
 
-function calculateNum(){
+var calculateNum = function() {
   var v = document.getElementById("inputnum");
   alert(v.value);
 };
 
-function sliceString() {
+var sliceString = function() {
   var str = document.getElementById("slcString").value;
   var s = str.slice(2);
   document.getElementById("sliceanswer").innerHTML = s;
 };
 
-function splitString(){
-    var x = document.getElementById('sentence');
-    var answer = x.value.split(" ");
-    document.getElementById("splitthestring").innerHTML = answer;
+var splitString = function() {
+  var x = document.getElementById('sentence');
+  var answer = x.value.split(" ");
+  document.getElementById("splitthestring").innerHTML = answer;
 };
 
-function indexToWord(){
+var indexToWord = function() {
   var s = document.getElementById("sentenceforindex").value;
   var w = document.getElementById('wordforindex');
   var indexis = s.indexOf(w.value);
@@ -81,7 +81,7 @@ function indexToWord(){
 /* right column */
 /* right column */
 /* right column */
-function myFunction() {
+var myFunction = function() {
   var x = document.getElementById("numb").value;
 
   if (isNaN(x) || x < 1 || x > 10) {
@@ -91,19 +91,39 @@ function myFunction() {
   }
 };
 
-function changeInnerHtml(){
+var changeInnerHtml = function(){
   var x = document.getElementById('innerhtml');
   x.innerHTML = "This text has been changed";
 };
 
-function writeDate(){ //this works but opens a new page
+var writeDate = function(){ //this works but opens a new page
   document.write(Date());
 };
 
 
-function addInputs(){
+var addInputs = function(){
   var x = parseInt(document.getElementById('twonums1').value);
   var y = parseInt(document.getElementById('twonums2').value);
   w = x + y;
   document.getElementById("output").innerHTML = w;
 };
+
+
+/////////////////////////////
+function thisFunction() {
+  var myFunc= function(num) {
+    var sum = num + 2;
+    return sum;
+  }
+
+  console.log(myFunc(2));
+
+  var myFunc2 = function(myFunc) {
+    var sum = myFunc = 2;
+    return sum;
+  }
+
+  console.log(myFunc2());
+};
+
+thisFunction();
