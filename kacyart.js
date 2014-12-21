@@ -109,21 +109,65 @@ var addInputs = function(){
 };
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////
-function thisFunction() {
-  var myFunc= function(num) {
-    var sum = num + 2;
-    return sum;
-  }
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
 
-  console.log(myFunc(2));
+var x = 2;
+var y = 2;
 
-  var myFunc2 = function(myFunc) {
-    var sum = myFunc = 2;
-    return sum;
-  }
+var addFunction = function(a, b) {
+  var sum = a + b;
+  var num = 4;
 
-  console.log(myFunc2());
+  var finalSum = function(otherSum) {
+    var final = sum + otherSum;
+    return final;
+  };
+  return finalSum(num);
 };
 
-thisFunction();
+console.log(addFunction(x,y));
+
+
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+
+var name1 = "Greta";
+var name2 = "Hulme";
+
+var addNames = function(firstName, lastName) {
+  var finalName = firstName + " " + lastName;
+
+  var name3 = "Detroit";
+  var name4 = "Wendling";
+
+  var addAllNames = function(name, secondName1, secondName2) {
+    var printAllNames = name + "is siblings with" + " " + secondName1 + " " + secondName2;
+    return printAllNames;
+  };
+  return addAllNames(finalName, name3, name4);
+};
+
+console.log(addNames(name1, name2));
