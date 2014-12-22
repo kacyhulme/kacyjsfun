@@ -10,7 +10,7 @@ var spellItOut = function(){
 var timeDelay = function(arrayName, lengthOfArray, countNum, domEl){
   setTimeout(function(){
     document.getElementById(domEl).innerHTML = arrayName[countNum];
-  }, 1000);
+  }, 400 * countNum);
 }
 
 spellItOut();
