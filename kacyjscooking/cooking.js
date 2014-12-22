@@ -14,3 +14,20 @@ var addLetter = function(arrayName, lengthOfArray, countNum, domEl){
 }
 
 spellItOut();
+
+
+// code below is an example of a refactor by a senior dev
+// var letters = ["A", "L", "M", "O", "N", "D", "S"];
+
+// function addLetter(letter,i) {
+//   document.getElementById('p' + i).innerHTML = letter;
+// }
+
+// (function timer(i) {
+//   addLetter(letters[i], i+1);
+//   if (letters[i]) {
+//     setTimeout(function() {
+//       timer(i+1);
+//     }, 400);
+//   }
+// })(0);
